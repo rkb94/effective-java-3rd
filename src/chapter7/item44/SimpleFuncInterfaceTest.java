@@ -9,6 +9,9 @@ public class SimpleFuncInterfaceTest {
             }
         });
         doSomething(() -> System.out.println("test lambda"));
+
+        SimpleFuncInterface sfi = () -> System.out.println("qwer");
+        sfi.doWork();
     }
 
     public static void doSomething(SimpleFuncInterface sfi) {
